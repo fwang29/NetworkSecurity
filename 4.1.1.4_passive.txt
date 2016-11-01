@@ -1,0 +1,18 @@
+220 (vsFTPd 3.0.2)
+USER ftpuser
+331 Please specify the password.
+PASS changeme
+230 Login successful.
+SYST
+215 UNIX Type: L8
+PWD
+257 "/ftp"
+TYPE I
+200 Switching to Binary mode.
+SIZE flag.txt
+213 63
+PASV
+227 Entering Passive Mode (10,173,34,190,236,82).
+RETR flag.txt
+150 Opening BINARY mode data connection for flag.txt (63 bytes).
+226 Transfer complete.
